@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>459</width>
+    <height>369</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="tabletTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QCalendarWidget" name="calendarWidget">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>80</y>
+     <width>281</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/****************************************/
+
+QCalendarWidget QWidget {
+	alternate-background-color: rgba(0, 0, 0, 40);
+    outline:0;
+}
+
+QCalendarWidget QTableView QHeaderView::section {
+	/*font-family:Myriad;*/
+}
+
+#qt_calendar_navigationbar {
+    /*background-color: rgba(250, 0, 0, 150);*/
+	background-color: rgb(240, 240, 240);
+	border: 1px solid rgb(173, 173, 173);
+}
+
+/****************************************/
+
+#qt_calendar_monthbutton,#qt_calendar_yearbutton {
+    margin-top: 5px;
+	margin-bottom: 5px;
+    font-size:15px;
+	color: rgb(0, 0, 0);
+	border:1;
+}
+#qt_calendar_monthbutton{
+	padding-left:0;
+	padding-right:auto;
+	margin-left:0;
+	margin-right:0;
+}
+#qt_calendar_yearbutton {
+	padding-left:auto;
+	padding-right:0;
+	margin-left:auto;
+	margin-right:0;
+}
+#qt_calendar_monthbutton:hover,#qt_calendar_yearbutton:hover {
+    color: rgba(0, 0, 0,100);
+}
+
+#qt_calendar_yearedit {
+    margin-left:0px;
+    min-width: 10px;
+    color: #000;
+    background: transparent;
+    font-size: 15px;
+}
+#qt_calendar_yearedit::up-button { 
+    image: url(Assets/up.svg);
+}
+
+#qt_calendar_yearedit::down-button { 
+    image: url(Assets/down.svg);
+}
+
+#qt_calendar_yearedit::down-button, 
+#qt_calendar_yearedit::up-button {
+    width:20;
+    border-radius:5px;
+
+}
+#qt_calendar_yearedit::down-button:hover, 
+#qt_calendar_yearedit::up-button:hover {
+    background-color: rgba(0, 0, 0,40);
+}
+#qt_calendar_monthbutton::menu-indicator {
+	 image: none;
+}
+
+/****************************************/
+
+#qt_calendar_prevmonth {
+    padding-left:15px;
+    image: url(Assets/back.svg);
+}
+#qt_calendar_nextmonth {
+    padding-right:10;
+    image: url(Assets/next.svg);
+}
+
+#qt_calendar_prevmonth,#qt_calendar_nextmonth {
+    border:1px;
+    qproperty-icon:none;
+}
+#qt_calendar_prevmonth:hover, 
+#qt_calendar_nextmonth:hover {
+    background-color: rgba(0, 0, 0,40);
+}
+
+/****************************************/
+#qt_calendar_calendarview {
+	/* Remove the selected dashed box */
+    outline: 0px;
+
+	border: 1px solid rgb(173, 173, 173);
+	border-top: 0px;
+}
+
+</string>
+   </property>
+   <property name="gridVisible">
+    <bool>true</bool>
+   </property>
+   <property name="selectionMode">
+    <enum>QCalendarWidget::SingleSelection</enum>
+   </property>
+   <property name="verticalHeaderFormat">
+    <enum>QCalendarWidget::ISOWeekNumbers</enum>
+   </property>
+   <property name="navigationBarVisible">
+    <bool>true</bool>
+   </property>
+   <property name="dateEditAcceptDelay">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>80</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+    background:transparent;
+
+}
+QPushButton:hover {
+	
+	background-color: rgba(0, 0, 0, 40);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/newPrefix/Assets/today.svg</normaloff>:/newPrefix/Assets/today.svg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

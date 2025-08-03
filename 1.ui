@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>PSBkeys</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="minimumSize">
+         <size>
+          <width>651</width>
+          <height>91</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>651</width>
+          <height>91</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Расписки</string>
+        </property>
+        <widget class="QLabel" name="label_13">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Номер ключа:</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_2">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>60</y>
+           <width>161</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <property name="duplicatesEnabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_12">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ID терминала:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>40</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Serial Pin Pad:</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>40</y>
+           <width>161</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>20</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Serial POS:</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>20</y>
+           <width>161</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_14">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>60</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Филиал:</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_4">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>40</y>
+           <width>161</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_5">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>20</y>
+           <width>161</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="geometry">
+          <rect>
+           <x>540</x>
+           <y>20</y>
+           <width>91</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Список в ПЦ</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="minimumSize">
+         <size>
+          <width>581</width>
+          <height>91</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>581</width>
+          <height>91</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Сервис</string>
+        </property>
+        <widget class="QLabel" name="label_24">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>50</y>
+           <width>71</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Кол. ключей:</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_11">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>20</y>
+           <width>91</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Резервировать</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_23">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>51</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Филиал:</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_5">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>20</y>
+           <width>91</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>20</y>
+           <width>91</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Отчет 
+за период</string>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="dateEdit_3">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>20</y>
+           <width>91</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+         <property name="date">
+          <date>
+           <year>2023</year>
+           <month>8</month>
+           <day>1</day>
+          </date>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="dateEdit_4">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>50</y>
+           <width>91</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="dateTime">
+          <datetime>
+           <hour>0</hour>
+           <minute>0</minute>
+           <second>0</second>
+           <year>2023</year>
+           <month>8</month>
+           <day>23</day>
+          </datetime>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+         <property name="date">
+          <date>
+           <year>2023</year>
+           <month>8</month>
+           <day>23</day>
+          </date>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_25">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>20</y>
+           <width>21</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>С:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_26">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>50</y>
+           <width>20</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>По:</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_6">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>50</y>
+           <width>91</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>70</y>
+           <width>201</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>Записи для обработки</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="editTriggers">
+          <set>QAbstractItemView::SelectedClicked</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="minimumSize">
+          <size>
+           <width>191</width>
+           <height>521</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>191</width>
+           <height>521</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Редактирование данных</string>
+         </property>
+         <widget class="QDateEdit" name="dateEdit_2">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>38</y>
+            <width>106</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="calendarPopup">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>81</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Дата ввода</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>61</y>
+            <width>131</width>
+            <height>32</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Редактировать</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_15">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>130</y>
+            <width>71</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Ключи ввёл:</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox_3">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>150</y>
+            <width>131</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_16">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>170</y>
+            <width>47</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>ID</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_11">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>190</y>
+            <width>131</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_12">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>230</y>
+            <width>131</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_17">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>210</y>
+            <width>47</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Тип POS</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_13">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>270</y>
+            <width>131</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>250</y>
+            <width>111</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Серийный номер POS</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_14">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>310</y>
+            <width>131</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>290</y>
+            <width>111</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Тип PINPAD</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_15">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>350</y>
+            <width>131</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>330</y>
+            <width>131</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Серийный номер PINPAD</string>
+          </property>
+         </widget>
+         <widget class="QScrollBar" name="horizontalScrollBar_2">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>490</y>
+            <width>171</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QListView" name="listView_2">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>380</y>
+            <width>131</width>
+            <height>111</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_12">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>159</x>
+            <y>379</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>Assets/save.svg</normaloff>Assets/save.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>139</x>
+            <y>37</y>
+            <width>22</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>Assets/today.svg</normaloff>Assets/today.svg</iconset>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox_4">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>110</y>
+            <width>131</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>71</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Филиал</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_13">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>408</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>Assets/delete.svg</normaloff>Assets/delete.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>22</width>
+            <height>22</height>
+           </size>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
